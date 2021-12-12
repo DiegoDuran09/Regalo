@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Regalo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <i class="em em-black_right_pointing_triangle_with_double_vertical_bar" aria-role="presentation" aria-label=""></i>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <audio src="https://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" autoplay>
+    </audio> -->
+    <div class="main-container">
+        <div class="container" id="mensaje1">
+            <h2 class="title">Feliz Cumpleaños</h2>
+            <div class="love"></div>
+            <audio class="player__audio" controls id="audio">
+                <source src="./music/favorite-music.mp3"
+                    type="audio/mpeg" />
+            </audio>
+            <input type="button" class="btn" onclick="cambiarPestaña()" id="start" value="Abrir Regalo" />
+        </div>
+        <div class="container" id="mensaje2">
+            <h2 class="title">Ahi estan tus cinco so, para tu helado de ron con pazas bb</h2>
+            <img src="./img/5soles.png" alt="cinco soles">
+            <p class="letrasPequeñas">Tranquila todavía hay mas 7w7</p>
+        </div>
+        <div class="container" id="mensaje3">
+            <h2 class="title">Me encantas... ¿Quieres saber por qué?</h2>
+        </div>
+        <div class="container" id="mensaje4">
+            <h2 class="title">Porque...</h2>
+            <p class="parrafo">Amo tu personalidad, amo tu forma de ser, amo cada cosita de ti. Eres perfecta y no
+                existe otra persona mas lista que tú. Tú eres lo mas lindo que existe, lo único bueno y que hace bien a
+                este mundo.Me gustas un monton</p>
+        </div>
+        <div class="container" id="mensaje5">
+            <h2 class="title">Oye...</h2>
+            <p class="parrafo">¿Ves la imagen del fondo? Pues quiero algo así contigo y es por eso que hoy te
+                pregunto...
+            </p>
+        </div>
+        <div class="container" id="novia">
+            <h2 class="title">¿Quieres ser mi novia?</h3>
+                <p class="letrasPequeñas">Obviamente no esta trucado &#128580 &#9995</p>
+                <div class="button-container">
+                    <input type="button" class="btn" onclick="noviaSi()" id="btnSi" value="Si" />
+                    <input type="button" class="btn" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+                </div>
+        </div>
+        <div class="container" id="congratulation">
+            <h2 class="title">Uhhh Sabia que dirias que si jsjjsjsjsj</h2>
+            <input type="button" class="btn" id="return" onclick="regresar()" value="Regresar">
+        </div>
+        <script src="./script.js"></script>
+    </div>
+</body>
+
+</html>
